@@ -1,11 +1,11 @@
-# webpack Babel demo
+# ES6 fighter game
 
 Demonstrates how to use webpack with Babel.
 
 Installation:
 
 ```
-cd webpack-babel-demo/
+cd BS_ES6/
 npm install
 ```
 
@@ -20,3 +20,5 @@ There are three ways in which you can build and run the web app:
 * Hot reloading via webpack dev server:
     * `npm start`
     * Go to `http://localhost:8080/`, page reloads automatically when there are changes
+
+based on Axel Rauschmayer webpack-babel-demo repository `https://github.com/rauschma/webpack-babel-demo`

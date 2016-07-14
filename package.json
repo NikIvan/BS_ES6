@@ -1,12 +1,13 @@
 {
   "devDependencies": {
     "babel-loader": "^6.1.0",
-    "babel-preset-es2015": "^6.1.18",
     "babel-polyfill": "^6.3.14",
-
+    "babel-preset-es2015": "^6.1.18",
+    "copy-webpack-plugin": "^0.2.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
     "webpack": "^1.12.6",
-    "webpack-dev-server": "^1.12.1",
-    "copy-webpack-plugin": "^0.2.0"
+    "webpack-dev-server": "^1.12.1"
   },
   "scripts": {
     "build": "webpack",
@@ -14,8 +15,10 @@
     "start": "webpack-dev-server --hot --inline"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
-  "author": "Axel Rauschmayer",
+  "author": "NikIvan",
   "license": "MIT"
 }
