@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let regularFighter = new Fighter('Alex', 7, 120);
 	let improvedFighter = new ImprovedFighter('Bob', 7, 120);
 
-	fight(regularFighter, improvedFighter, 3, 4, 5, 6, 4, 4, 5, 4, 3, 3);
+	fight(regularFighter, improvedFighter, 3, 4, 5, 6, 4, 6, 5, 4, 5, 3);
 
 	document.getElementById('console').innerHTML = `Hello ${world}!`;
 });
@@ -25,9 +25,8 @@ function fight(regularFighter, improvedFighter, ...points) {
 		
 		fighters[next].hit(fighters[+!next], point);
 
-		winner = fighters.some((fighter) => {
-			return fighter.health <= 0;
-		});
+		// Check for winner
+		winner = fighters[+!next].health <= 0 ? true : false;
 		
 		if(winner) {
 			console.log(`${fighters[next].type} ${fighters[next].name} is a winner. Well done!`);

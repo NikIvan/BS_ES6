@@ -9,6 +9,6 @@ export default class ImprovedFighter extends Fighter {
 
 	doubleHit(enemy, point) {
 		let improvedPoint = point * this.pointModifier;
-		this.hit(enemy, improvedPoint);
+		super.hit(enemy, improvedPoint);
 	}
 }

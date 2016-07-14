@@ -1,7 +1,5 @@
 # ES6 fighter game
 
-Demonstrates how to use webpack with Babel.
-
 Installation:
 
 ```

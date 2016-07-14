@@ -18,8 +18,8 @@ export default class Fighter {
 	}
 
 	getStats() {
-		console.log('Name: ' + this.name);
-		console.log('Power: ' + this.power);
-		console.log('Health: ' + this.health);
+		console.log(`Name: ${this.name}`);
+		console.log(`Power: ${this.power}`);
+		console.log(`Health: ${this.health}`);
 	}
 }
